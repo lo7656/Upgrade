@@ -3,36 +3,43 @@
     padding:0;
     font-family: 'Roboto', sans-serif;
 }
-
+ $clrtext: #1D1D1D;
 .banner{
     display: flex;
     flex-direction: row-reverse;
+    width: 100%;
     
     &__slaider{
         align-self: flex-end;
         background-image: url(/assets/images/img1.png);
-        background-size: contain;
-        height: 800px;
-        width: 75vw;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 70rem;
+        width: 95rem;
     }
 
     &__content{
         position: absolute;
         display: flex;
+        top:20%;
+        left:25%;
         flex-direction: column;
         width: 25vw;
 
         &-title{
+            font-family: 'Poppins', sans-serif;
             font-size: 10rem;
-        }
+            color: $clrtext;
+            line-height: 65%;
 
+        }
         &-button{
-            font-size:18px;
+            font-size:24px;
             display: inline;
-            background-color:#1D1D1D;
-            width: 11.25rem;
-            padding-top: 0.7rem;
-            padding-bottom: 0.7rem;
+            background-color: $clrtext;
+            width: 15rem;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
             text-decoration: none;
             color: #FFFFFF;
             align-self: stretch;
