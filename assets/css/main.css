@@ -17,5 +17,14 @@
 .banner__content {
   width: 20vw;
 }
+.banner__content-button {
+  background-color: #1D1D1D;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  text-decoration: none;
+  color: #FFFFFF;
+}
 
 /*# sourceMappingURL=main.css.map */
