@@ -1,0 +1,21 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+.banner{
+    display: flex;
+    flex-direction: row;
+    
+    &__slaider{
+        align-self: flex-end;
+        background-image: url(/assets/images/img1.png);
+        background-size: contain no-repeat;
+        height: 800px;
+        width: 80vw;
+    }
+
+    &__content{
+        width: 20vw;
+    }
+}
