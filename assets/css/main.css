@@ -6,26 +6,35 @@
 
 .banner {
   display: flex;
-  flex-direction: row;
+  flex-direction: row-reverse;
 }
 .banner__slaider {
   align-self: flex-end;
   background-image: url(/assets/images/img1.png);
-  background-size: contain no-repeat;
+  background-size: contain;
   height: 800px;
   width: 75vw;
 }
 .banner__content {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
   width: 25vw;
 }
+.banner__content-title {
+  font-size: 10rem;
+}
 .banner__content-button {
+  font-size: 18px;
+  display: inline;
   background-color: #1D1D1D;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  width: 11.25rem;
   padding-top: 0.7rem;
   padding-bottom: 0.7rem;
   text-decoration: none;
   color: #FFFFFF;
+  align-self: stretch;
+  text-align: center;
 }
 
 /*# sourceMappingURL=main.css.map */
