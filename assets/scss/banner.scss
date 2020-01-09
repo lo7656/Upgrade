@@ -14,36 +14,55 @@
         background-image: url(/assets/images/img1.png);
         background-size: cover;
         background-repeat: no-repeat;
-        height: 70rem;
-        width: 95rem;
+        height: 800px;
+        width: 1200px;
     }
 
     &__content{
         position: absolute;
         display: flex;
         top:20%;
-        left:25%;
+        left:17%;
         flex-direction: column;
-        width: 25vw;
+        justify-content: space-between;
+        width: 33vw;
+        height:45vh;
 
         &-title{
             font-family: 'Poppins', sans-serif;
             font-size: 10rem;
             color: $clrtext;
             line-height: 65%;
+            text-align: center;
 
         }
         &-button{
-            font-size:24px;
+            margin:10px;
+            font-size:1.2rem;
             display: inline;
             background-color: $clrtext;
-            width: 15rem;
-            padding-top: 1rem;
-            padding-bottom: 1rem;
+            width: 12rem;
+            padding-top: 0.7rem;
+            padding-bottom: 0.7rem;
             text-decoration: none;
             color: #FFFFFF;
             align-self: stretch;
             text-align: center;
+            margin-left:22%;
+            margin-bottom:20%;
+        }
+
+        &-icons{
+            width: 8rem;
+            display: flex;
+            justify-content: space-between;
+            margin-left: 22%;
+        }
+        
+        &-icon{
+            cursor: pointer;
+            font-size: 1.30rem;
+            display: inline-block;
         }
     }
 }
