@@ -8,13 +8,14 @@
     display: flex;
     flex-direction: row-reverse;
     width: 100%;
+    height: 80vh;
     
     &__slaider{
         align-self: flex-end;
         background-image: url(/assets/images/img1.png);
         background-size: cover;
         background-repeat: no-repeat;
-        height: 800px;
+        height: 100%;
         width: 1200px;
     }
 
@@ -26,37 +27,24 @@
         flex-direction: column;
         justify-content: space-between;
         width: 33vw;
-        height:45vh;
+        height:55%;
 
         &-title{
-            font-family: 'Poppins', sans-serif;
             font-size: 10rem;
-            color: $clrtext;
             line-height: 65%;
             text-align: center;
-
+            color: transparent;
+            -webkit-text-stroke: 0.001px $clrtext;
         }
-        &-button{
-            margin:10px;
-            font-size:1.2rem;
-            display: inline;
-            background-color: $clrtext;
-            width: 12rem;
-            padding-top: 0.7rem;
-            padding-bottom: 0.7rem;
-            text-decoration: none;
-            color: #FFFFFF;
-            align-self: stretch;
-            text-align: center;
-            margin-left:22%;
-            margin-bottom:20%;
+
+        &-full{
+            color:$clrtext;
         }
 
         &-icons{
             width: 8rem;
             display: flex;
             justify-content: space-between;
-            margin-left: 22%;
         }
         
         &-icon{
