@@ -1,5 +1,32 @@
+$color-for-title:#1D1D1D;
+
 body{
     width: 100%;
     height: 100%;
+    margin:0;
+    padding:0;
+    font-family: 'Roboto', sans-serif;
 }
 
+.banner{
+    display: flex;
+    justify-content: flex-end;
+
+    &-title{
+        position: absolute;
+        left:15%;
+        top:15%;
+        max-width: 40%;
+        text-align: right;
+        line-height: 70%;
+        font-size: 10rem;
+        font-weight: normal;
+        -webkit-text-stroke: 1.5px $color-for-title;
+        color:transparent;
+    }
+
+    &-full{
+        color:$color-for-title;
+        -webkit-text-stroke:0;
+    }
+}
