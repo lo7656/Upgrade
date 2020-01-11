@@ -1,0 +1,23 @@
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    &__logo{
+
+        display: inline-block;
+        
+        &-title{
+        }
+    }
+
+    &__btns{
+        display: flex;
+
+        &-btn{
+            
+        }
+    }
+}
