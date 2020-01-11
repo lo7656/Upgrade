@@ -10,12 +10,14 @@ body {
   display: flex;
   justify-content: flex-end;
 }
-.banner-title {
+.banner__content {
   position: absolute;
-  left: 15%;
+  left: 10%;
   top: 15%;
-  max-width: 40%;
-  text-align: right;
+  max-width: 50%;
+}
+.banner-title {
+  text-align: left;
   line-height: 70%;
   font-size: 10rem;
   font-weight: normal;
@@ -25,6 +27,22 @@ body {
 .banner-full {
   color: #1D1D1D;
   -webkit-text-stroke: 0;
+}
+.banner__slaider {
+  display: flex;
+  width: 70%;
+}
+.banner__slaider-image {
+  object-fit: cover;
+  width: 100%;
+}
+.banner-icons {
+  position: absolute;
+  top: 65%;
+  left: 25%;
+  display: flex;
+  justify-content: space-around;
+  width: 7rem;
 }
 
 /*# sourceMappingURL=main.css.map */
