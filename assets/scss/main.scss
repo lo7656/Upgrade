@@ -1,8 +1,8 @@
-@import 'navbar.scss';
 @import 'colors.scss';
 
 body {
     font-family: 'Roboto', sans-serif;
     color:$dark;
-    margin: 0;
 }
+@import 'navbar.scss';
+
