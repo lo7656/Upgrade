@@ -4,6 +4,7 @@ body{
 
 .navbar{
     display: flex;
+    background-color: transparent;
     justify-content: space-between;
     padding-top:2.5rem;
     margin:0 auto;
@@ -11,29 +12,33 @@ body{
 
 
     &__logo{
+        margin-top: 1rem;
         text-decoration: none;
         color:$dark;
         display: inline-block;
         font-weight: bold;
         font-size: 1.5rem;
+        text-decoration: line-through;
+        text-decoration-color: #FFFFFF;
     }
 
     &__btns{
         font-size: 18px;
         display: flex;
         justify-content: space-between;
-        max-width: 275px;
-        width: 30%;
+        max-width: 350px;
+        width: 35%;
 
 
         &-btn{
+            font-weight: bold;
             transition: 0.3s;
             color:$dark;
             text-decoration: none;
             border:1px solid $dark;
-            padding:1rem;
-            padding-top: 0.5rem;
-            padding-bottom: 0.5rem;
+            padding:1.8rem;
+            padding-top: 0.815rem;
+            padding-bottom: 0.815rem;
 
             &:hover{
                 color:#FFFFFF;
