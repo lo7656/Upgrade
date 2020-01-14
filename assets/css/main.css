@@ -3,18 +3,65 @@ body {
   color: #1D1D1D;
 }
 
+.container {
+  margin: 0 auto;
+}
+
 .about-title {
   text-align: center;
   line-height: 70%;
   font-size: 6.25rem;
   -webkit-text-stroke: 1.5px #1D1D1D;
   color: transparent;
+  margin-bottom: 8rem;
 }
 .about-head {
   font-size: 3rem;
 }
+.about__content-card {
+  margin-top: 3rem;
+  width: 100%;
+  display: flex;
+}
+.about__content-card:last-child {
+  margin-top: 0;
+  height: 15rem;
+  display: flex;
+  justify-content: center;
+}
+.about__content-container {
+  position: relative;
+  width: 50%;
+}
+.about__content-image {
+  width: 50%;
+  height: 22rem;
+}
+.about__content-info {
+  width: 100%;
+  font-weight: bold;
+  font-size: 24px;
+  margin-top: 10.5rem;
+  margin-left: 9.5rem;
+}
+.about__content-back {
+  position: absolute;
+  left: 5rem;
+  top: 1rem;
+  -webkit-text-stroke: 1.5px #1d1d1d;
+  color: transparent;
+  font-weight: normal;
+  font-size: 7.5rem;
+  opacity: 0.5;
+}
+.about__content .back-dif {
+  margin: 0;
+}
+.about__content .info-dif {
+  margin-top: 4.5rem;
+}
 
-.contaner {
+.container {
   max-width: 1100px;
 }
 
