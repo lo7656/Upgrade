@@ -18,5 +18,21 @@
             color: transparent;
             font-size: 6.25rem;
         }
+
+        &-info{
+            display: flex;
+            width: 16rem;
+            flex-direction: column;
+            margin:0;
+        }
+
+        &-title{
+            margin:0;
+            text-align: center;
+        }
+
+        &-text{
+            margin:0;
+        }
     }
 }
