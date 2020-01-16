@@ -1,6 +1,28 @@
+.perfomance-head {
+  font-size: 6.25rem;
+}
+.perfomance__content {
+  display: flex;
+  flex-wrap: wrap;
+}
+.perfomance__content-card {
+  display: flex;
+  width: 50%;
+}
+.perfomance__content-back {
+  -webkit-text-stroke: 1.5px #1D1D1D;
+  color: transparent;
+  font-size: 6.25rem;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   color: #1D1D1D;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
 }
 
 /*# sourceMappingURL=main.css.map */

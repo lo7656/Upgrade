@@ -1,0 +1,22 @@
+.perfomance{
+
+    &-head{
+        font-size:6.25rem;
+    }
+
+    &__content{
+        display: flex;
+        flex-wrap:wrap;
+
+        &-card{
+            display: flex;
+            width: 50%;
+        }
+
+        &-back{
+            -webkit-text-stroke: 1.5px #1D1D1D;
+            color: transparent;
+            font-size: 6.25rem;
+        }
+    }
+}
