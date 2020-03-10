@@ -1,7 +1,47 @@
+body{
+    margin: 0;
+}
 .answers{
+    background-color: $dark;
+    color: #FFFFFF;
+
+    &-link{
+        color: #C8C7C7;
+    }
+
+    &__title{
+        display: flex;
+        font-size: 4.5rem;
+        justify-content: center;
+        
+        &-name{
+            margin: 0;
+            &:last-child{
+                -webkit-text-stroke: 1.5px #F2F2F2;
+                color: transparent;
+                align-self: flex-end;
+            }
+        }
+    }
+
+    &-info{
+        margin-left: 3%;
+        color: #C8C7C7;
+        width: 27rem;
+        margin-bottom: 2rem;
+    }
 
     &__cards{
         display: flex;
         flex-wrap: wrap;
+        justify-content: space-around;
+
+        &-name{
+            font-size:1.3rem;
+        }
+
+        &-question{
+            width: 40%;
+        }
     }
 }

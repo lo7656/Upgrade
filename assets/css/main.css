@@ -1,4 +1,46 @@
 body {
+  margin: 0;
+}
+
+.answers {
+  background-color: #1D1D1D;
+  color: #FFFFFF;
+}
+.answers-link {
+  color: #C8C7C7;
+}
+.answers__title {
+  display: flex;
+  font-size: 4.5rem;
+  justify-content: center;
+}
+.answers__title-name {
+  margin: 0;
+}
+.answers__title-name:last-child {
+  -webkit-text-stroke: 1.5px #F2F2F2;
+  color: transparent;
+  align-self: flex-end;
+}
+.answers-info {
+  margin-left: 3%;
+  color: #C8C7C7;
+  width: 27rem;
+  margin-bottom: 2rem;
+}
+.answers__cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.answers__cards-name {
+  font-size: 1.3rem;
+}
+.answers__cards-question {
+  width: 40%;
+}
+
+body {
   font-family: "Roboto", sans-serif;
   color: #1D1D1D;
 }
