@@ -25,6 +25,7 @@
   text-align: center;
   color: #000000;
   transition: 0.5s;
+  margin-top: 0;
 }
 .perfomance__content-click:hover {
   border: #000000 1px solid;
