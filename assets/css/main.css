@@ -14,6 +14,35 @@
   color: transparent;
   align-self: flex-end;
 }
+.addit__cards-card {
+  position: relative;
+  width: 60%;
+}
+.addit__cards-info {
+  display: flex;
+  flex-direction: column;
+  height: 25rem;
+  justify-content: space-between;
+  left: 360px;
+  top: -30px;
+  position: absolute;
+}
+.addit__cards-title {
+  mix-blend-mode: luminosity;
+  font-size: 5rem;
+}
+.addit__cards-button {
+  text-decoration: none;
+  background-color: black;
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  width: 8.5rem;
+  color: white;
+  margin-left: 6rem;
+  font-size: 1.5rem;
+}
 
 body {
   font-family: "Roboto", sans-serif;
