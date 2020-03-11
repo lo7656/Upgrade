@@ -1,0 +1,68 @@
+.container-request{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.request{
+    display: flex;
+
+    &__title{
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        width: 34rem;
+        &-label{
+            line-height: 90%;
+            -webkit-text-stroke: 1.5px #1D1D1D;
+            color: transparent;
+            font-size: 6.25rem;
+            margin: 0;
+            &:first-child{
+                align-self: flex-end;
+            }
+        }
+    }
+
+    &__form{
+        margin-top: 1.5rem;
+        display: flex;
+        flex-direction: column;
+
+        &-input{
+            display: flex;
+            justify-content: center;
+            width: 20rem;
+            border: #FFFFFF 1px solid;
+            border-bottom: $dark 1px solid;
+            height: 3rem;
+            margin-top: 0.5rem;
+            transition: 0.5s;
+
+            &:hover{
+                transition: 0.5s;
+                border: $dark 1px solid;
+            }
+        }
+
+        &-enter{
+            width: 95%;
+            border:none;
+            height: 90%;
+            color: $dark;
+            outline: none;
+        }
+
+        &-send{
+            margin-top: 3rem;
+            text-decoration: none;
+            color: #FFFFFF;
+            background-color:  $dark;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 2.7rem;
+        }
+    }
+}
