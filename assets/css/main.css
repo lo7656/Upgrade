@@ -5,6 +5,7 @@ body {
 .answers {
   background-color: #1D1D1D;
   color: #FFFFFF;
+  padding-bottom: 6rem;
 }
 .answers-link {
   color: #C8C7C7;
