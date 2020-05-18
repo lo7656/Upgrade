@@ -1,5 +1,6 @@
 body{
     font-family: 'Roboto', sans-serif;
+    background-color: $dark;
 }
 
 
@@ -30,20 +31,20 @@ body{
         max-width: 350px;
         width: 35%;
 
-
         &-btn{
             font-weight: bold;
             transition: 0.3s;
-            color:$dark;
+            color:#FFFFFF;
             text-decoration: none;
-            border:1px solid $dark;
+            border:1px solid #FFFFFF;
             padding:1.8rem;
             padding-top: 0.815rem;
             padding-bottom: 0.815rem;
+            background-color: $dark;
 
             &:hover{
-                color:#FFFFFF;
-                background-color: $dark;
+                color: $dark;
+                background-color: #FFFFFF;
             }
         }
 

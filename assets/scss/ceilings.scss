@@ -1,4 +1,8 @@
+$dark:#1D1D1D;
+
 body {
     font-family: 'Roboto', sans-serif;
     color:$dark;
 }
+
+@import 'bar.scss';
