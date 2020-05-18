@@ -1,0 +1,21 @@
+.container{
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.types{
+    &-title {
+        text-align: left;
+        line-height: 70%;
+        font-size: 8rem;
+        font-weight: normal;
+        -webkit-text-stroke: 1.5px #FFFFFF;
+        color: transparent;
+        margin-bottom: 100px;
+      }
+
+      &__list-card{
+          display: flex;
+          flex-direction: row;
+      }
+}
