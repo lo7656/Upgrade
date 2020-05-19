@@ -3,4 +3,48 @@ body {
   color: #1D1D1D;
 }
 
+.container-modal {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.modal {
+  color: #1D1D1D;
+}
+.modal__top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 70px;
+}
+.modal__top-logo {
+  margin-left: 50px;
+}
+.modal__top-close {
+  margin-right: 50px;
+  text-decoration: none;
+  color: #1D1D1D;
+  transition: 0.3s;
+}
+.modal__top-close:hover {
+  text-decoration: underline;
+  transition: 0.3s;
+}
+.modal__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.modal__list-link {
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 0;
+  margin-bottom: 30px;
+  text-decoration: none;
+  color: #1D1D1D;
+}
+.modal__list-link:hover {
+  text-decoration: underline;
+}
+
 /*# sourceMappingURL=ceilings.css.map */
