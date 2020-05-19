@@ -18,9 +18,51 @@ body {
   color: transparent;
   margin-bottom: 100px;
 }
+.types__list-area {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 350px;
+  margin-top: 150px;
+  margin-left: 50px;
+}
+.types__list-info {
+  width: 400px;
+  font-size: 1rem;
+  line-height: 140.5%;
+  margin-right: 10px;
+}
 .types__list-card {
+  position: relative;
+  height: 500px;
   display: flex;
   flex-direction: row;
+  margin-bottom: 70px;
+}
+.types__list-card:nth-child(even) {
+  flex-direction: row-reverse;
+}
+.types__list-title {
+  position: absolute;
+  font-size: 4.5rem;
+  left: 130px;
+  width: 100%;
+}
+.types__list-titleEven {
+  position: absolute;
+  font-size: 4.5rem;
+  left: 330px;
+  width: 100%;
+}
+.types__list-button {
+  color: #FFFFFF;
+  text-decoration: none;
+  border-bottom: 1px solid #FFFFFF;
+  display: block;
+  text-align: center;
+  width: 150px;
+  height: 30px;
+  margin: 0 auto;
 }
 
 /*# sourceMappingURL=ceilings.css.map */

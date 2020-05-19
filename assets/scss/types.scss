@@ -14,8 +14,60 @@
         margin-bottom: 100px;
       }
 
-      &__list-card{
-          display: flex;
-          flex-direction: row;
+      &__list{
+
+          &-area{
+              display: flex;
+              flex-direction: column;
+              justify-content: space-around;
+              height: 350px;
+              margin-top: 150px;
+              margin-left: 50px;
+            }
+
+          &-info{
+              width: 400px;
+              font-size: 1rem;
+              line-height: 140.5%;
+              margin-right: 10px;
+          }
+
+          &-card{
+            position: relative;
+            height: 500px;
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 70px;
+
+            &:nth-child(even){
+                flex-direction: row-reverse;
+            }
+        }
+        
+
+        &-title{
+            position: absolute;
+            font-size: 4.5rem;
+            left: 130px;
+            width: 100%;
+        }
+
+        &-titleEven{
+            position: absolute;
+            font-size: 4.5rem;
+            left: 330px;
+            width: 100%;
+        }
+
+        &-button{
+            color: #FFFFFF;
+            text-decoration: none;
+            border-bottom: 1px solid #FFFFFF;
+            display: block;
+            text-align: center;
+            width: 150px;
+            height: 30px;
+            margin: 0 auto;
+        }
       }
 }
