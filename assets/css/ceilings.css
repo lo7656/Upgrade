@@ -10,6 +10,7 @@ body {
 
 .modal {
   color: #1D1D1D;
+  transition: 0.3s;
 }
 .modal__top {
   height: 50px;

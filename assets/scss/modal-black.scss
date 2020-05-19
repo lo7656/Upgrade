@@ -5,6 +5,7 @@
 
 .modal{
     color: $dark;
+    transition: 0.3s;
 
     &__top{
         height: 50px;
@@ -70,7 +71,7 @@
         }
 
         &-phone{
-            
+
             &:hover{
                 text-decoration: underline;
             }
