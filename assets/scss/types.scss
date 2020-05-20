@@ -97,7 +97,10 @@
 
     .types{
         &-title{
+            margin:0;
             text-align: center;
+            margin-bottom: 50px;
+            margin-top: 30px;
             font-size: 5rem;
         }
 
@@ -113,7 +116,7 @@
                 margin:0;
                 font-size: 3rem;
                 z-index: 9999;
-                margin-top: 20px;
+                margin-top: 40px;
             }
 
             &-titleEven{
@@ -168,7 +171,7 @@
                 display: flex;
                 flex-direction: row;
                 justify-content: space-around;
-                margin-bottom: 10px;
+                margin-bottom: 30px;
             }
         }
     }

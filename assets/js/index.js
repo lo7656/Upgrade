@@ -1,5 +1,5 @@
 window.onresize = function (event) {
-    this.console.log('work')
+    gichange()
 }
 
 function hide(obj) {
@@ -22,10 +22,12 @@ function hide(obj) {
 
 }
 
-$(document).ready(function () {
+function change(){
+    let arrImg = document.querySelectorAll('.types__list-img')
+    let arrInfo = document.querySelectorAll('.types__list-info')
+    let arrBtns = document.querySelectorAll('.info')
+
     if (document.documentElement.clientWidth < 1201) {
-        let arrInfo = document.querySelectorAll('.types__list-info')
-        let arrBtns = document.querySelectorAll('.info')
 
         for (const obj of arrInfo) {
             obj.style.visibility = "hidden"
@@ -35,7 +37,7 @@ $(document).ready(function () {
             obj.style.visibility = "visible"
         }
 
-    } else if (document.documentElement.clientWidth < 1201) {
+    } else if (document.documentElement.clientWidth > 1201) {
         for (const obj of arrInfo) {
             obj.style.visibility = "visible"
         }
@@ -49,4 +51,7 @@ $(document).ready(function () {
     $('.info').on('click', function () {
         console.log()
     })
+}
+$(document).ready(function () {
+    change()
 })
