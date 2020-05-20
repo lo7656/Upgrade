@@ -55,6 +55,9 @@ body {
 .types__list-big {
   left: 200px;
 }
+.types__list-img {
+  transition: 0.3s;
+}
 .types__list-button {
   color: #FFFFFF;
   text-decoration: none;
@@ -66,6 +69,7 @@ body {
   padding-top: 15px;
   margin: 0 auto;
   transition: 0.3s;
+  cursor: pointer;
 }
 .types__list-button:hover {
   color: #1D1D1D;
@@ -118,7 +122,8 @@ body {
     margin: 0 auto;
     text-align: justify;
     line-height: 200%;
-    overflow-y: scroll;
+    overflow-y: auto;
+    font-style: italic;
   }
   .types__list-card {
     height: 30%;
