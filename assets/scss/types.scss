@@ -85,6 +85,11 @@
 
 
 @media screen and (max-width: 1200px){
+    body{
+        width: 100%;
+        margin: 0;
+    }
+
     .types{
         &-title{
             text-align: center;
@@ -106,25 +111,58 @@
                 margin-top: 20px;
             }
 
+            &-titleEven{
+                text-align: center;
+                position: static;
+                margin:0;
+                font-size: 3rem;
+                z-index: 9999;
+                margin-top: 20px;
+            }
+
             &-area{
                 z-index: 9999;
                 margin:0 auto;
+                margin-top: 15%;
+                justify-content: space-between;
             }
 
             &-img{
                 position: absolute;
+                width: 100%;
+                opacity: 0.8;
+                height: 100%;
             }
 
             &-info{
                 margin:0 auto;
                 text-align: justify;
-                margin-top:30%;
-                margin-bottom: 15%;
+                line-height: 200%;
+                overflow-y: scroll;
             }
 
             &-card{
-                height: auto;
+                height: 30%;
                 flex-direction: column;
+                justify-content: space-around;
+                margin: 0;
+                width: 100%;
+                margin-bottom:30px;
+
+                &:nth-child(even){
+                    flex-direction: column;
+                }
+            }
+
+            &-button{
+                display: inline-block;
+            }
+
+            &-btns{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                margin-bottom: 10px;
             }
         }
     }
