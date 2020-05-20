@@ -46,13 +46,14 @@ body {
   position: absolute;
   font-size: 4.5rem;
   left: 130px;
-  width: 100%;
 }
 .types__list-titleEven {
   position: absolute;
   font-size: 4.5rem;
   left: 330px;
-  width: 100%;
+}
+.types__list-big {
+  left: 200px;
 }
 .types__list-button {
   color: #FFFFFF;
@@ -70,6 +71,41 @@ body {
   color: #1D1D1D;
   background-color: #FFFFFF;
   transition: 0.3s;
+}
+
+@media screen and (max-width: 1200px) {
+  .types-title {
+    text-align: center;
+    font-size: 5rem;
+  }
+  .types__list-info {
+    width: 80%;
+  }
+  .types__list-title {
+    text-align: center;
+    position: static;
+    margin: 0;
+    font-size: 3rem;
+    z-index: 9999;
+    margin-top: 20px;
+  }
+  .types__list-area {
+    z-index: 9999;
+    margin: 0 auto;
+  }
+  .types__list-img {
+    position: absolute;
+  }
+  .types__list-info {
+    margin: 0 auto;
+    text-align: justify;
+    margin-top: 30%;
+    margin-bottom: 15%;
+  }
+  .types__list-card {
+    height: auto;
+    flex-direction: column;
+  }
 }
 
 /*# sourceMappingURL=ceilings.css.map */

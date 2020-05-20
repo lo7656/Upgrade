@@ -49,14 +49,17 @@
             position: absolute;
             font-size: 4.5rem;
             left: 130px;
-            width: 100%;
         }
+
 
         &-titleEven{
             position: absolute;
             font-size: 4.5rem;
             left: 330px;
-            width: 100%;
+        }
+
+        &-big{
+            left: 200px;
         }
 
         &-button{
@@ -78,4 +81,51 @@
             }
         }
       }
+}
+
+
+@media screen and (max-width: 1200px){
+    .types{
+        &-title{
+            text-align: center;
+            font-size: 5rem;
+        }
+
+        &__list{
+
+            &-info{
+                width: 80%;
+            }
+
+            &-title{
+                text-align: center;
+                position: static;
+                margin:0;
+                font-size: 3rem;
+                z-index: 9999;
+                margin-top: 20px;
+            }
+
+            &-area{
+                z-index: 9999;
+                margin:0 auto;
+            }
+
+            &-img{
+                position: absolute;
+            }
+
+            &-info{
+                margin:0 auto;
+                text-align: justify;
+                margin-top:30%;
+                margin-bottom: 15%;
+            }
+
+            &-card{
+                height: auto;
+                flex-direction: column;
+            }
+        }
+    }
 }
