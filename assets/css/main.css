@@ -59,6 +59,49 @@
   margin-left: 10rem;
 }
 
+@media screen and (max-width: 1200px) {
+  .addit__title {
+    width: auto;
+    margin-bottom: 0;
+  }
+  .addit__title-content {
+    font-size: 3rem;
+    display: block;
+  }
+  .addit__title-content:last-child {
+    align-self: center;
+  }
+  .addit__cards-card {
+    flex-direction: column;
+    margin: 0;
+  }
+  .addit__cards-image {
+    margin-top: 15%;
+    width: 100%;
+    height: auto;
+  }
+  .addit__cards-info {
+    position: static;
+    height: auto;
+    width: 100%;
+  }
+  .addit__cards-title {
+    font-size: 3rem;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+  .addit__cards-button {
+    margin: 0 auto;
+    width: 45%;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 400px) {
+  .addit__title-content {
+    font-size: 2.5rem;
+  }
+}
 body {
   font-family: "Roboto", sans-serif;
   color: #1D1D1D;
