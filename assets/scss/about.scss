@@ -69,3 +69,55 @@
     }
   }
 }
+
+@media screen and (max-width: 950px){
+
+  .about{
+    &-head{
+      text-align: center;
+    }
+
+    &__content{
+
+      &-card{
+        flex-direction: column;
+        margin-top: 20px;
+
+        &:last-child{
+          height: auto;
+          margin-top: 20px;
+        }
+      }
+
+      &-reverse{
+        flex-direction: column-reverse;
+      }
+
+      &-info{
+        width: auto;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        text-align: center;
+      }
+
+      &-back{
+        display: none;
+      }
+
+      &-image{
+        margin: 0 auto;
+        max-width: 550px;
+        width: 100%;
+      }
+
+      &-container{
+        width: 100%;
+        margin: 0 auto;
+      }
+
+      .info-dif{
+        margin:0;
+      }
+    }
+  }
+}
