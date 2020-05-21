@@ -46,11 +46,13 @@ body {
   position: absolute;
   font-size: 4.5rem;
   left: 130px;
+  z-index: 9999;
 }
 .types__list-titleEven {
   position: absolute;
   font-size: 4.5rem;
   left: 330px;
+  z-index: 9999;
 }
 .types__list-big {
   left: 200px;

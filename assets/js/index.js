@@ -1,5 +1,5 @@
 window.onresize = function (event) {
-    gichange()
+    change()
 }
 
 function hide(obj) {
@@ -10,12 +10,12 @@ function hide(obj) {
 
     if (arrInfo[obj.id].style.visibility != "visible"){
         arrInfo[obj.id].style.visibility = "visible"
-        arrImg[obj.id].style.opacity = 0.4
+         arrImg[obj.id].style.opacity = 0.4
     }
         
     else{
         arrInfo[obj.id].style.visibility = "hidden"
-        arrImg[obj.id].style.opacity = 0.8
+         arrImg[obj.id].style.opacity = 0.8
     }
         
 
@@ -29,6 +29,7 @@ function change(){
 
     if (document.documentElement.clientWidth < 1201) {
 
+        console.log('меньше')
         for (const obj of arrInfo) {
             obj.style.visibility = "hidden"
         }
@@ -38,6 +39,12 @@ function change(){
         }
 
     } else if (document.documentElement.clientWidth > 1201) {
+        
+        for (const obj of arrImg) {
+            obj.style.opacity = 0.8
+        }
+
+        console.log('больше')
         for (const obj of arrInfo) {
             obj.style.visibility = "visible"
         }
