@@ -40,6 +40,42 @@ body {
   width: 40%;
 }
 
+@media screen and (max-width: 500px) {
+  .answers__title {
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    width: 280px;
+  }
+  .answers-info {
+    width: 95%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    text-align: justify;
+    line-height: 150%;
+    opacity: 0.5;
+  }
+  .answers__cards {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+  .answers__cards-name {
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    text-align: justify;
+  }
+  .answers__cards-question {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+  .answers__cards-answer {
+    width: 100%;
+    margin: 0 auto;
+    text-align: justify;
+  }
+}
 body {
   font-family: "Roboto", sans-serif;
   color: #1D1D1D;

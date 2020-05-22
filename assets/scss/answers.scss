@@ -44,3 +44,48 @@ body{
         }
     }
 }
+
+@media screen and (max-width: 500px){
+    .answers{
+
+        &__title{
+            text-align: center;
+            margin: 0 auto;
+            margin-bottom: 10px;
+            width: 280px;
+        }
+
+        &-info{
+            width: 95%;
+            margin:0 auto;
+            margin-bottom: 10px;
+            text-align: justify;
+            line-height: 150%;
+            opacity: 0.5;
+        }
+
+        &__cards{
+            flex-direction: column;
+            flex-wrap: nowrap;
+
+            &-name{
+                width: 100%;
+                margin: 0 auto;
+                margin-bottom: 10px;
+                text-align: justify;
+            }
+
+            &-question{
+                width: 90%;
+                margin: 0 auto;
+                margin-bottom: 30px;
+            }
+
+            &-answer{
+                width: 100%;
+                margin: 0 auto;
+                text-align: justify;
+            }
+        }
+    }
+}
