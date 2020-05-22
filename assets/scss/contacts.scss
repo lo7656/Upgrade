@@ -16,6 +16,11 @@ body{
             flex-direction: column;
         }
 
+        &-links{
+            display: flex;
+            flex-direction: column;
+        }
+
         &-link{
             color: #AAAAAA;
 
@@ -31,5 +36,102 @@ body{
         opacity: 0.5;
         margin: 0;
         line-height: 0.7;
+    }
+}
+
+@media screen and (max-width: 730px){
+    .contacts{
+        &-title{
+            font-size: 2rem;
+        }
+
+        &__info{
+            flex-direction: column;
+            width: 60%;
+            margin: 0 auto;
+            align-items: center;
+            padding-top: 50px;
+            margin-bottom: 30px;
+            margin-left: 30%;
+
+            &-link{
+                margin-top: 10px;
+
+                &:first-child{
+                    margin-top: 10px;
+                }
+            }
+
+            &-linkAn:first-child{
+                margin-top: 10px;
+            }
+
+            &-links{
+                flex-direction: row;
+                justify-content: space-between;
+                width: 100%;
+                max-width: 260px;
+            }
+
+            &-text{
+                width: 100%;
+
+                &:first-child{
+                    margin-bottom: 30px;
+                }
+
+                &:last-child{
+                    margin-top: 30px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 550px){
+    .contacts{
+        &-title{
+            font-size: 2rem;
+        }
+
+        &__info{
+            flex-direction: column;
+            width: 60%;
+            margin: 0 auto;
+            align-items: center;
+            padding-top: 50px;
+            margin-bottom: 30px;
+
+            &-link{
+                margin-top: 10px;
+
+                &:first-child{
+                    margin-top: 10px;
+                }
+            }
+
+            &-linkAn:first-child{
+                margin-top: 10px;
+            }
+
+            &-links{
+                flex-direction: row;
+                justify-content: space-between;
+                width: 100%;
+                max-width: 260px;
+            }
+
+            &-text{
+                width: 100%;
+
+                &:first-child{
+                    margin-bottom: 30px;
+                }
+
+                &:last-child{
+                    margin-top: 30px;
+                }
+            }
+        }
     }
 }
