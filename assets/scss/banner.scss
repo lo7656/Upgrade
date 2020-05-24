@@ -74,8 +74,56 @@ body {
     }
 
     &-icons{
-        left: 10px;
-        top: 850px;
+        left: 5%;
+    }
+
+    &__content{
+      display: flex;
+      left:20%;
+      max-width: none;
+      left: 0;
+      width: 100%;
+    }
+
+    &-title{
+      font-size: 6rem;
+      display: flex;
+      flex-direction: column;
+      margin: 0 auto;
+    }
+
+    &-full{
+      width: 350px;
+    }
+
+    &-icons{
+      top:none;
+    }
+
+    &__slider{
+
+      &-image{
+        width: auto;
+        height: 100%;
+      }
+    }
+    
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .banner{
+    
+    &-title{
+      font-size: 4rem;
+    }
+
+    &-full{
+      width: 250px;
+    }
+
+    &-icons{
+      bottom: 7%;
     }
   }
 }
