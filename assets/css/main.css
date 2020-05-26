@@ -43,7 +43,7 @@ body {
   width: 100%;
   height: 900px;
 }
-.banner-icons {
+.banner__icons {
   position: absolute;
   bottom: 15%;
   left: 20%;
@@ -58,10 +58,13 @@ body {
 }
 
 @media screen and (max-width: 1200px) {
+  .banner {
+    position: relative;
+  }
   .banner__slider {
     width: 100%;
   }
-  .banner-icons {
+  .banner__icons {
     left: 5%;
   }
   .banner__content {
@@ -72,7 +75,7 @@ body {
     width: 100%;
   }
   .banner-title {
-    font-size: 6rem;
+    font-size: 8rem;
     display: flex;
     flex-direction: column;
     margin: 0 auto;
@@ -80,23 +83,33 @@ body {
   .banner-full {
     width: 350px;
   }
-  .banner-icons {
+
+  .banner__icons {
     top: none;
+    bottom: 7%;
   }
+
   .banner__slider-image {
-    width: auto;
+    width: 100%;
     height: 100%;
   }
 }
+
 @media screen and (max-width: 500px) {
   .banner-title {
-    font-size: 4rem;
+    font-size: 3.5rem;
+  }
+
+  .banner__content{
+    top: 25%;
   }
   .banner-full {
-    width: 250px;
+    width: 212px;
   }
-  .banner-icons {
+  .banner__icons {
     bottom: 7%;
+    left: 0;
+    width: 25%;
   }
 }
 body {
