@@ -1,0 +1,140 @@
+.addit{
+    &__title{
+        margin:0 auto;
+        display: flex;
+        flex-direction: column;
+        width: 55rem;
+        margin-bottom: 5rem;
+
+        &-content{
+            font-size: 6.25rem;
+            margin:0;
+            &:last-child{
+                line-height: 70%;
+                -webkit-text-stroke: 1.5px $dark;
+                color: transparent;
+                align-self: flex-end;
+            }
+        }
+    }
+
+    &__cards{
+        &-card{
+            display: flex;
+            position: relative;
+
+            margin-bottom: 3rem;
+            &:nth-child(2){
+                justify-content: flex-end;
+            }
+        }
+
+        &-image{
+            height: 420px;
+        }
+
+        &-info{
+            display: flex;
+            flex-direction: column;
+            height: 24rem;
+            justify-content: space-between;
+            left:300px;
+            top:-30px;
+            position: absolute;
+        }
+
+        &-another{
+            left:370px;
+            top:-30px;
+        }
+
+        &-title{
+            mix-blend-mode: luminosity;
+            font-size: 5rem;
+        }
+
+        &-button{
+            text-decoration: none;
+            background-color: black;
+            padding-top: 0.8rem;
+            padding-bottom: 0.8rem;
+            padding-left: 2rem;
+            padding-right:2rem;
+            width: 8.5rem;
+            color: white;
+            margin-left: 4rem;
+            font-size: 1.5rem;
+
+        }
+
+        &-buttonAnother{
+            margin-left:10rem;
+        }
+    }
+}
+
+@media screen and (max-width: 1200px){
+    .addit{
+
+        &__title{
+            width: auto;
+            margin-bottom: 0;
+            &-content{
+                font-size: 3rem;
+                display: block;
+
+                &:last-child{
+                    align-self: center;
+                }
+            }
+
+            
+        }
+
+        &__cards{
+
+            &-card{
+                flex-direction: column;
+                margin: 0;
+            }
+
+            &-image{
+
+                margin-top:15%;
+                width: 100%;
+                height: auto;
+            }
+
+            &-info{
+                position: static;
+                height: auto;
+                width: 100%;
+            }
+
+            &-title{
+                font-size: 3rem;;
+                margin: 0 auto;
+                margin-top: 20px;
+                margin-bottom: 30px;
+            }
+
+            &-button{
+                margin: 0 auto;
+                width: 45%;
+                text-align: center;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 400px){
+    .addit{
+
+        &__title{
+
+            &-content{
+                font-size: 2.5rem;
+            }
+        }
+    }
+}

@@ -1,12 +1,17 @@
 
 @import 'colors.scss';
+@import 'addit.scss';
 @import 'perf.scss';
 @import "banner.scss";
-
 
 body{
     font-family: 'Roboto', sans-serif;
     color:$dark;
+}
+
+.container{
+    max-width: 1100px;
+    margin:0 auto;
 }
 
 @import 'about.scss';
