@@ -288,6 +288,84 @@ body {
   }
 }
 body {
+  margin: 0;
+}
+
+.answers {
+  background-color: #1D1D1D;
+  color: #FFFFFF;
+  padding-bottom: 6rem;
+}
+.answers-link {
+  color: #C8C7C7;
+}
+.answers__title {
+  display: flex;
+  font-size: 1.2rem;
+  justify-content: flex-start;
+}
+.answers__title-name {
+  margin: 0;
+}
+.answers__title-name:last-child {
+  -webkit-text-stroke: 1px #F2F2F2;
+  color: transparent;
+  align-self: flex-end;
+}
+.answers-info {
+  color: #C8C7C7;
+  width: 27rem;
+  margin-bottom: 2rem;
+}
+.answers__cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.answers__cards-name {
+  font-size: 1.3rem;
+}
+.answers__cards-question {
+  width: 40%;
+}
+
+@media screen and (max-width: 500px) {
+  .answers__title {
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    width: 280px;
+  }
+  .answers-info {
+    width: 95%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    text-align: justify;
+    line-height: 150%;
+    opacity: 0.5;
+  }
+  .answers__cards {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+  .answers__cards-name {
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    text-align: justify;
+  }
+  .answers__cards-question {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+  .answers__cards-answer {
+    width: 100%;
+    margin: 0 auto;
+    text-align: justify;
+  }
+}
+body {
   font-family: "Roboto", sans-serif;
   color: #1D1D1D;
 }
