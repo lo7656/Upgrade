@@ -33,16 +33,10 @@
             transition: 0.5s;
             margin-top:0;
 
-            
-            &:hover{
-                border: #000000 1px solid;
-                transition: 0.1s;
-            }
-
             &:hover{
                 background-color: #000000;
                 color:#FFFFFF;
-                transition: 1s;
+                transition: 0.3s;
             }
         }
 
@@ -83,6 +77,59 @@
         &-text{
             margin:0;
             text-align: justify;
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+
+    .perfomance{
+
+        &-head{
+            font-size: 3rem;
+            text-align: center;
+        }
+
+        &__content{
+
+            flex-direction: column;
+            flex-wrap: none;
+
+            &-info{
+                width: 75%;
+            }
+
+            &-card{
+                justify-content: center;
+
+                &:nth-child(even){
+                    justify-content: center;
+                }
+            }
+
+            &-back{
+                display: none;
+            }
+
+            &-order{
+                margin-bottom: 20px;
+                justify-content: center;
+            }
+
+            &-block{
+                width: 100%;
+            }
+
+            &-click{
+                margin-top: 20px;
+                margin-bottom: 20px;
+                font-size: 1.5rem;
+                background-color: #000000;
+                color:#FFFFFF;
+                width: 45%;
+                padding-left: 2rem;
+                padding-right: 2rem;
+            }
         }
     }
 }

@@ -1,4 +1,7 @@
 .addit{
+
+    margin-top:50px;
+    
     &__title{
         margin:0 auto;
         display: flex;
@@ -79,9 +82,11 @@
         &__title{
             width: auto;
             margin-bottom: 0;
+
             &-content{
                 font-size: 3rem;
                 display: block;
+                margin: 0 auto;
 
                 &:last-child{
                     align-self: center;
