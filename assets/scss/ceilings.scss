@@ -6,6 +6,7 @@ body {
     color:$dark;
 }
 
+@import 'bar.scss';
 @import 'modal-black.scss';
 @import 'dark-contacts.scss';
 @import 'types.scss';
