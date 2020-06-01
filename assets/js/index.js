@@ -8,21 +8,21 @@ function hide(obj) {
     let arrInfo = document.querySelectorAll('.types__list-info')
     let arrImg = document.querySelectorAll('.types__list-img')
 
-    if (arrInfo[obj.id].style.visibility != "visible"){
+    if (arrInfo[obj.id].style.visibility != "visible") {
         arrInfo[obj.id].style.visibility = "visible"
-         arrImg[obj.id].style.opacity = 0.4
+        arrImg[obj.id].style.opacity = 0.4
     }
-        
-    else{
+
+    else {
         arrInfo[obj.id].style.visibility = "hidden"
-         arrImg[obj.id].style.opacity = 0.8
+        arrImg[obj.id].style.opacity = 0.8
     }
-        
+
 
 
 }
 
-function change(){
+function change() {
     let arrImg = document.querySelectorAll('.types__list-img')
     let arrInfo = document.querySelectorAll('.types__list-info')
     let arrBtns = document.querySelectorAll('.info')
@@ -39,7 +39,7 @@ function change(){
         }
 
     } else if (document.documentElement.clientWidth > 1201) {
-        
+
         for (const obj of arrImg) {
             obj.style.opacity = 0.8
         }
@@ -55,10 +55,18 @@ function change(){
     }
 
 
-    $('.info').on('click', function () {
-        console.log()
-    })
+
 }
-$(document).ready(function () {
-    change()
-})
+
+// $(document).ready(function () {
+//     change()
+
+//     $('.types__list-button').on('click', function () {
+//         let modal = document.querySelector('.modal')
+
+//         if (modal.style.display == 'none')
+//             modal.style.display = 'block'
+//         else
+//             modal.style.display = 'none'
+//     })
+// })

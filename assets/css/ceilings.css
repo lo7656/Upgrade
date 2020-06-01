@@ -1,6 +1,12 @@
 body {
   font-family: "Roboto", sans-serif;
-  color: #1D1D1D;
+  color: #FFFFFF;
+  background-color: #1D1D1D;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #1D1D1D;
 }
 
 .navbar {
@@ -53,6 +59,7 @@ body {
   display: none;
   color: #1D1D1D;
   transition: 0.3s;
+  background-color: #FFFFFF;
 }
 .modal__top {
   height: 50px;
@@ -202,6 +209,9 @@ body {
 }
 .types__list-card:nth-child(even) {
   flex-direction: row-reverse;
+}
+.types__list-card:last-child {
+  margin-bottom: 0;
 }
 .types__list-title {
   position: absolute;

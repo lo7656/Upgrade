@@ -42,6 +42,10 @@
             &:nth-child(even){
                 flex-direction: row-reverse;
             }
+
+            &:last-child{
+                margin-bottom: 0;
+            }
         }
         
 
