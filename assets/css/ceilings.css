@@ -9,6 +9,7 @@ body {
 }
 
 .modal {
+  display: none;
   color: #1D1D1D;
   transition: 0.3s;
 }
@@ -84,9 +85,10 @@ body {
 }
 .modal__list-link:hover {
   text-decoration: underline;
+}
+
+body {
   margin: 0;
-  color: #FFFFFF;
-  background-color: #1D1D1D;
 }
 
 .container {
@@ -120,6 +122,11 @@ body {
   opacity: 0.5;
   margin: 0;
   line-height: 0.7;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
 }
 
 .types-title {
