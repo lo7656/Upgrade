@@ -1,8 +1,11 @@
 $dark:#1D1D1D;
+$color-for-title: #1d1d1d;
 
 body {
     font-family: 'Roboto', sans-serif;
-    color:$dark;
+    color:#FFFFFF;
+    background-color: $dark;
 }
 
 @import 'dark-contacts.scss';
+@import 'types.scss';
