@@ -1,6 +1,89 @@
 body {
   font-family: "Roboto", sans-serif;
   color: #1D1D1D;
+}
+
+.container-modal {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.modal {
+  color: #1D1D1D;
+  transition: 0.3s;
+}
+.modal__top {
+  height: 50px;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 70px;
+}
+.modal__top-logo {
+  margin-left: 50px;
+}
+.modal__top-close {
+  margin-right: 50px;
+  text-decoration: none;
+  color: #1D1D1D;
+  transition: 0.3s;
+}
+.modal__top-close:hover {
+  text-decoration: underline;
+  transition: 0.3s;
+}
+.modal__bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 50px;
+  margin-right: 50px;
+  align-items: center;
+}
+.modal__bottom-social {
+  text-decoration: none;
+  color: #1D1D1D;
+  margin-left: 10px;
+}
+.modal__bottom-social:hover {
+  text-decoration: underline;
+}
+.modal__bottom-contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.modal__bottom-contacts * {
+  margin: 0;
+  color: #1D1D1D;
+  text-decoration: none;
+}
+.modal__bottom-mail {
+  margin-top: 7px;
+}
+.modal__bottom-mail:hover {
+  text-decoration: underline;
+}
+.modal__bottom-phone:hover {
+  text-decoration: underline;
+}
+.modal__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.modal__list-link {
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 0;
+  margin-bottom: 30px;
+  text-decoration: none;
+  color: #1D1D1D;
+}
+.modal__list-link:hover {
+  text-decoration: underline;
   margin: 0;
   color: #FFFFFF;
   background-color: #1D1D1D;
@@ -37,7 +120,8 @@ body {
   opacity: 0.5;
   margin: 0;
   line-height: 0.7;
-=======
+}
+
 .types-title {
   text-align: left;
   line-height: 70%;

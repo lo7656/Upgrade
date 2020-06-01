@@ -3,9 +3,9 @@ $color-for-title: #1d1d1d;
 
 body {
     font-family: 'Roboto', sans-serif;
-    color:#FFFFFF;
-    background-color: $dark;
+    color:$dark;
 }
 
+@import 'modal-black.scss';
 @import 'dark-contacts.scss';
 @import 'types.scss';
