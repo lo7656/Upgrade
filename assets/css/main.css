@@ -116,6 +116,8 @@ body {
 }
 
 .request {
+  padding-top: 50px;
+  padding-bottom: 50px;
   display: flex;
 }
 .request__title {
@@ -182,7 +184,7 @@ body {
     flex-direction: column;
   }
   .request__form-send {
-    width: 45%;
+    width: 20rem;
     margin: 0 auto;
     margin-bottom: 30px;
     margin-top: 30px;
@@ -210,12 +212,13 @@ body {
 .answers {
   background-color: #1D1D1D;
   color: #FFFFFF;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 .answers-link {
   color: #C8C7C7;
 }
 .answers__title {
-  margin-top: 50px;
   display: flex;
   font-size: 1.2rem;
   justify-content: flex-start;
@@ -364,8 +367,10 @@ body {
     margin: 0;
   }
   .addit__cards-image {
-    margin-top: 15%;
+    margin: 0 auto;
+    margin-top: 5%;
     width: 100%;
+    max-width: 650px;
     height: auto;
   }
   .addit__cards-info {
@@ -402,6 +407,7 @@ body {
   display: flex;
   width: 100%;
   justify-content: flex-end;
+  margin-bottom: 30px;
 }
 .perfomance__content-block {
   display: flex;
@@ -458,6 +464,9 @@ body {
 }
 
 @media screen and (max-width: 1200px) {
+  .perfomance {
+    margin-top: 100px;
+  }
   .perfomance-head {
     font-size: 3rem;
     text-align: center;
@@ -466,8 +475,13 @@ body {
     flex-direction: column;
     flex-wrap: none;
   }
+  .perfomance__content-title {
+    font-size: 2rem;
+    margin-bottom: 15px;
+  }
   .perfomance__content-info {
-    width: 75%;
+    width: 65%;
+    font-style: italic;
   }
   .perfomance__content-card {
     justify-content: center;
@@ -507,6 +521,7 @@ body {
 .banner {
   display: flex;
   justify-content: flex-end;
+  padding-bottom: 5%;
 }
 .banner__content {
   position: absolute;
@@ -624,6 +639,7 @@ body {
 }
 .about-head {
   font-size: 3rem;
+  margin-top: 0;
 }
 .about__content-card {
   margin-top: 5rem;
@@ -645,7 +661,6 @@ body {
   height: 22rem;
 }
 .about__content-info {
-  width: 100%;
   font-weight: bold;
   font-size: 24px;
   margin-top: 10.5rem;

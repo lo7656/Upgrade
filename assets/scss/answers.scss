@@ -4,13 +4,14 @@ body{
 .answers{
     background-color: $dark;
     color: #FFFFFF;
+    padding-top: 30px;
+    padding-bottom: 30px;
 
     &-link{
         color: #C8C7C7;
     }
 
     &__title{
-        margin-top: 50px;
         display: flex;
         font-size: 1.2rem;
         justify-content: flex-start;
