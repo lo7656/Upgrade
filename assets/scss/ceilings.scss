@@ -1,4 +1,3 @@
-
 $dark:#1D1D1D;
 $color-for-title: #1d1d1d;
 
@@ -8,4 +7,5 @@ body {
     background-color: $dark;
 }
 
+@import 'dark-contacts.scss';
 @import 'types.scss';

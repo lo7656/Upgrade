@@ -1,5 +1,7 @@
 body {
   font-family: "Roboto", sans-serif;
+  color: #1D1D1D;
+  margin: 0;
   color: #FFFFFF;
   background-color: #1D1D1D;
 }
@@ -9,6 +11,33 @@ body {
   margin: 0 auto;
 }
 
+.contacts {
+  color: #AAAAAA;
+  background-color: #1D1D1D;
+}
+.contacts__info {
+  margin-bottom: 6rem;
+  padding-top: 5rem;
+  display: flex;
+  justify-content: space-between;
+}
+.contacts__info-text {
+  display: flex;
+  flex-direction: column;
+}
+.contacts__info-link {
+  color: #AAAAAA;
+}
+.contacts__info-link:first-child {
+  margin-top: 2rem;
+}
+.contacts-title {
+  font-size: 6.25rem;
+  font-weight: bold;
+  opacity: 0.5;
+  margin: 0;
+  line-height: 0.7;
+=======
 .types-title {
   text-align: left;
   line-height: 70%;
