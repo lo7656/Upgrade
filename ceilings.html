@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="assets/css/ceilings.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="assets/js/modal.js"></script>
     <title>Document</title>
 </head>
+
 <body>
     <nav class="navbar">
         <a class="navbar__logo" href="#"><img src="assets/img/logo2.png" alt="">
@@ -17,6 +21,124 @@
           <a href="" class="navbar__btns-btn">Меню</a>
         </div>
       </nav>
-    <script src="/assets/js/index.js"></script>
+  
+    <section class="modal">
+        <div class="container-modal">
+            <div class="modal__top">
+                <img class="modal__top-logo" src="assets/img/modal-logo.png" alt="">
+                <a class="modal__top-close" href="#">Закрыть</a>
+            </div>
+
+            <div class="modal__list">
+                <a href="#" class="modal__list-link">Портфолио</a>
+                <a href="#" class="modal__list-link">Услуги</a>
+                <a href="#" class="modal__list-link">Факторы</a>
+                <a href="#" class="modal__list-link">Контакты</a>
+            </div>
+
+            <div class="modal__bottom">
+                <div class="modal__bottom-links">
+                    <a class="modal__bottom-social" href="#">In</a>
+                    <a class="modal__bottom-social" href="#">Vk</a>
+                    <a class="modal__bottom-social" href="#">Tg</a>
+                </div>
+
+                <div class="modal__bottom-contacts">
+                    <a href="#" class="modal__bottom-phone">+375(33) 320 02 49</a>
+                    <a href="#" class="modal__bottom-mail">contact@company.com</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="contacts">
+        <div class="container">
+            <div class="contacts__info">
+                <div class="contacts__info-text">Какой-нибдь тест интересный</div>
+                <div class="contacts__info-text">
+                    По вопросам пишите на наш e-mail:
+                    <a class="contacts__info-link" href="#">адресМыла</a>
+                </div>
+                <div class="contacts__info-text">
+                    Мы в соц. сетях
+                    <a class="contacts__info-link" href="#">Vkontakte</a>
+                    <a class="contacts__info-link" href="#">Instagram</a>
+                </div>
+            </div>
+
+            <div class="contacts-title">Контакты</div>
+        </div>
+    </section>
+  
+    <section class="types">
+        <div class="container">
+            <h1 class="types-title">Фактуры</h1>
+
+            <div class="types__list">
+                <div class="types__list-card">
+                    <h1 class="types__list-title">Матовые потолки</h1>
+                    <div class="types__list-area">
+                        <p class="types__list-info">Матовая поверхность способна создать классический вид потолка, что является плюсом. Также пятна и загрязнения не заметны и ухаживать за поверхностью можно реже. Различие цветов не радует, но такие цвета не надоедают, так как относятся к классическим и теплым.
+                        </p>
+
+                        <div class="types__list-btns">
+                            <a class="types__list-button info" onClick="hide(this)" id="0" >Подробнее...</a>
+                            <a class="types__list-button" href="#">Оставить заявку</a>
+                        </div>
+                        </div>
+                    <img class="types__list-img" src="assets/img/type1.png" alt="">
+                </div>
+    
+                <div class="types__list-card">
+                    <h1 class="types__list-titleEven">Глянцевые потолки</h1>
+                    <div class="types__list-area">
+                        <p class="types__list-info">Такой вид всегда наиболее востребован, потому что он привлекает своей зеркальностью и блеском. Благодаря зеркальному отражению комната выглядит более просторной, что хорошо использовать в комнатах с небольшой площадью. Также поверхность потолка можно украшать наклейками, рисунками и другими декорациями
+                        </p>
+                        <div class="types__list-btns">
+                            <a class="types__list-button info" onClick="hide(this)" id="1" >Подробнее...</a>
+                            <a class="types__list-button" href="#">Оставить заявку</a>
+                        </div>
+                    </div>
+                    <img class="types__list-img" src="assets/img/type2.png" alt="">
+                </div>
+    
+    
+                <div class="types__list-card">
+                    <h1 class="types__list-title">Сатиновые потолки</h1>
+                    <div class="types__list-area">
+                        <p class="types__list-info">В отличие от зеркальной поверхности глянцевых потолков, сатиновые отражают свет в разных направлениях, создавая мягкие тени и ровное свечение поверхности. Они не бликуют, отраженный свет не режет глаз и не утомляет.
+                        </p>
+                        <div class="types__list-btns">
+                            <a class="types__list-button info" onClick="hide(this)" id="2" >Подробнее...</a>
+                            <a class="types__list-button" href="#">Оставить заявку</a>
+                        </div>
+                    </div>
+                    <img class="types__list-img" src="assets/img/type3.png" alt="">
+                </div>
+    
+    
+                <div class="types__list-card">
+                    <h1 class="types__list-titleEven types__list-big">Двухуровневые потолки</h1>
+                    <div class="types__list-area">
+                        <p class="types__list-info">Данные потолки позволяют скрыть дефекты перекрытия или значительные перепады по высоте. За вторым ярусом размещают коммуникации, проходящие под потолком — вентиляцию, сигнализацию, электропроводку или отопление. Высота заметно снизится только в необходимых местах, а не во всей комнате.
+                        </p>
+                        <div class="types__list-btns">
+                            <a class="types__list-button info" onClick="hide(this)" id="3" >Подробнее...</a>
+                            <a class="types__list-button" href="#">Оставить заявку</a>
+                        </div>
+                        
+                    </div>
+                    <img class="types__list-img" src="assets/img/type4.png" alt="">
+                </div>
+    
+            </div>
+        </div>
+    </section>
+  
+   <script src="/assets/js/index.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="assets/js/index.js"></script>
 </body>
+
 </html>
