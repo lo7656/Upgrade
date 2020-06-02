@@ -7,50 +7,56 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="assets/css/ceilings.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-    <script src="assets/js/modal.js"></script>
     <title>Document</title>
 </head>
 
 <body>
     <nav class="navbar">
-        <a class="navbar__logo" href="#"><img src="assets/img/logo2.png" alt="">
-        </a>
-  
-        <div class="navbar__btns">
-          <a href="" class="navbar__btns-btn">Оставить заявку</a>
-          <a href="" class="navbar__btns-open navbar__btns-btn">Меню</a>
-        </div>
-      </nav>
-  
-    <section class="modal">
-        <div class="container-modal">
-            <div class="modal__top">
-                <img class="modal__top-logo" src="assets/img/modal-logo.png" alt="">
-                <a class="modal__top-close" href="#">Закрыть</a>
+        <div class="navbar__content">
+            <a class="navbar__content-logo" href="#"><img class="navbar__logo-img" src="assets/img/logo-white.png" alt="">
+            </a>
+      
+            <div class="navbar__content-btns">
+              <a href="" class="navbar__btns-btn">Оставить заявку</a>
+              <a href="" class="navbar__btns-open navbar__btns-btn open">Меню</a>
             </div>
-
-            <div class="modal__list">
-                <a href="#" class="modal__list-link">Портфолио</a>
-                <a href="#" class="modal__list-link">Услуги</a>
-                <a href="#" class="modal__list-link">Факторы</a>
-                <a href="#" class="modal__list-link">Контакты</a>
-            </div>
-
-            <div class="modal__bottom">
-                <div class="modal__bottom-links">
-                    <a class="modal__bottom-social" href="#">In</a>
-                    <a class="modal__bottom-social" href="#">Vk</a>
-                    <a class="modal__bottom-social" href="#">Tg</a>
-                </div>
-
-                <div class="modal__bottom-contacts">
-                    <a href="#" class="modal__bottom-phone">+375(33) 320 02 49</a>
-                    <a href="#" class="modal__bottom-mail">contact@company.com</a>
-                </div>
-
+    
+            <div class="navbar__content-icons">
+                <img class="navbar__icons-icon" src="assets/img/mail-white.png" alt="">
+                <img class="navbar__icons-icon open" src="assets/img/menu-white.png" alt="">
             </div>
         </div>
-    </section>
+       
+        <section class="modal">
+            <div class="container-modal">
+                <!-- <div class="modal__top">
+                    <img class="modal__top-logo" src="assets/img/modal-logo.png" alt="">
+                    <a class="modal__top-close" href="#">Закрыть</a>
+                </div> -->
+    
+                <div class="modal__list">
+                    <a href="#" class="modal__list-link">Портфолио</a>
+                    <a href="#" class="modal__list-link">Услуги</a>
+                    <a href="#" class="modal__list-link">Факторы</a>
+                    <a href="#" class="modal__list-link">Контакты</a>
+                </div>
+    
+                <div class="modal__bottom">
+                    <div class="modal__bottom-links">
+                        <a class="modal__bottom-social" href="#">In</a>
+                        <a class="modal__bottom-social" href="#">Vk</a>
+                        <a class="modal__bottom-social" href="#">Tg</a>
+                    </div>
+    
+                    <div class="modal__bottom-contacts">
+                        <a href="#" class="modal__bottom-phone">+375(33) 320 02 49</a>
+                        <a href="#" class="modal__bottom-mail">contact@company.com</a>
+                    </div>
+    
+                </div>
+            </div>
+        </section>
+    </nav>
   
     <section class="types">
         <div class="container">
@@ -127,16 +133,18 @@
                 </div>
                 <div class="contacts__info-text">
                     Мы в соц. сетях
-                    <a class="contacts__info-link" href="#">Vkontakte</a>
-                    <a class="contacts__info-link" href="#">Instagram</a>
-                </div>
+
+                    <div class="contacts__info-links">
+                        <a class="contacts__info-link contacts__info-linkAn" href="#">Vkontakte</a>
+                        <a class="contacts__info-link" href="#">Instagram</a>
+                    </div>
+                    </div>
             </div>
 
             <div class="contacts-title">Контакты</div>
         </div>
     </section>
 
-   <script src="/assets/js/index.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
     <script src="assets/js/index.js"></script>
 </body>
