@@ -68,25 +68,40 @@ $(document).ready(function () {
         let icons = document.querySelectorAll('.navbar__icons-icon')
         let body = document.querySelector('body')
         let logo = document.querySelector('.navbar__logo-img')
+        let btns = document.querySelectorAll('.navbar__btns-btn')
        
 
 
         if (modal.style.display == 'block'){
             modal.style.display = 'none'
+            modal.style.transition='0.3s'
             nav.style.backgroundColor = '#1D1D1D'
             icons[1].src = 'assets/img/menu-white.png'
             icons[0].src = 'assets/img/mail-white.png'
             logo.src = 'assets/img/logo-white.png'
             body.style.marginTop = '0'
-
+            btns[0].style.backgroundColor = '';
+            btns[1].style.backgroundColor = '';
+            btns[0].style.border = '';
+            btns[1].style.border = '';
+            btns[0].style.color = '';
+            btns[1].style.color = '';
         }
         else{
             modal.style.display = 'block'
+            modal.style.transition='0.3s'
             nav.style.backgroundColor = '#FFFFFF'
             icons[1].src = 'assets/img/menu-dark.png'
             icons[0].src = 'assets/img/mail-dark.png'
             logo.src = 'assets/img/logo-dark.png'
             body.style.marginTop = '521px'
+            btns[0].style.backgroundColor = '#FFFFFF';
+            btns[1].style.backgroundColor = '#FFFFFF';
+            btns[0].style.border = '1px solid #1D1D1D';
+            btns[1].style.border = '1px solid #1D1D1D';
+            btns[0].style.color = '#1D1D1D';
+            btns[1].style.color = '#1D1D1D';
+
         }
             
     })
