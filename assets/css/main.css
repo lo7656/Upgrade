@@ -523,9 +523,13 @@ body {
   justify-content: flex-end;
   padding-bottom: 5%;
 }
+.banner__icon-img {
+  height: 34px;
+  width: 34px;
+}
 .banner__content {
   position: absolute;
-  left: 10%;
+  left: 15%;
   top: 15%;
   max-width: 50%;
 }
@@ -533,15 +537,8 @@ body {
   text-align: left;
   line-height: 70%;
   font-size: 10rem;
-  font-weight: normal;
-  -webkit-text-stroke: 1.5px #1d1d1d;
-  color: transparent;
-}
-.banner-full {
-  color: #1d1d1d;
-  -webkit-text-stroke: 0;
-  display: block;
-  transform: translate(30%);
+  font-weight: 500;
+  color: #1D1D1D;
 }
 .banner__slider {
   display: flex;
@@ -554,15 +551,15 @@ body {
 .banner__slider-image {
   object-fit: cover;
   width: 100%;
-  height: 900px;
+  height: 800px;
 }
 .banner__icons {
   position: absolute;
-  bottom: 15%;
-  left: 20%;
+  bottom: 22%;
+  left: 15%;
   display: flex;
   justify-content: space-around;
-  width: 7rem;
+  width: 200px;
 }
 .banner-icon {
   text-decoration: none;

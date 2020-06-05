@@ -13,9 +13,16 @@ body {
   justify-content: flex-end;
   padding-bottom: 5%;
 
+  &__icon{
+    &-img{
+      height: 34px;
+      width: 34px;
+    }
+  }
+
   &__content {
     position: absolute;
-    left: 10%;
+    left: 15%;
     top: 15%;
     max-width: 50%;
   }
@@ -24,16 +31,8 @@ body {
     text-align: left;
     line-height: 70%;
     font-size: 10rem;
-    font-weight: normal;
-    -webkit-text-stroke: 1.5px $color-for-title;
-    color: transparent;
-  }
-
-  &-full {
-    color: $color-for-title;
-    -webkit-text-stroke: 0;
-    display: block;
-    transform: translate(30%);
+    font-weight: 500;
+    color: $dark;
   }
 
   &__slider {
@@ -48,20 +47,17 @@ body {
     &-image {
       object-fit: cover;
       width: 100%;
-      height: 900px;
-    }
-
-    &-shortImage{
+      height: 800px;
     }
   }
 
   &__icons {
     position: absolute;
-    bottom: 15%;
-    left: 20%;
+    bottom: 22%;
+    left: 15%;
     display: flex;
     justify-content: space-around;
-    width: 7rem;
+    width: 200px;
   }
 
   &-icon {
