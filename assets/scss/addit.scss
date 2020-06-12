@@ -1,3 +1,11 @@
+.hidemob{
+    display: block;
+}
+
+.hidedesk{
+    display: none;
+}
+
 .addit{
 
     margin-top:50px;
@@ -6,34 +14,32 @@
         margin:0 auto;
         display: flex;
         flex-direction: column;
-        width: 55rem;
+        font-weight: bold;
         margin-bottom: 5rem;
 
         &-content{
-            font-size: 6.25rem;
+            font-size: 32px;
             margin:0;
-            &:last-child{
-                line-height: 70%;
-                -webkit-text-stroke: 1.5px $dark;
-                color: transparent;
-                align-self: flex-end;
-            }
         }
     }
 
     &__cards{
+
         &-card{
             display: flex;
             position: relative;
+            justify-content: space-between;
 
             margin-bottom: 3rem;
             &:nth-child(2){
-                justify-content: flex-end;
+                flex-direction: row-reverse;
             }
+
+            
         }
 
         &-image{
-            height: 420px;
+            width: 50%;
         }
 
         &-info{
@@ -41,32 +47,45 @@
             flex-direction: column;
             height: 24rem;
             justify-content: space-between;
-            left:300px;
-            top:-30px;
-            position: absolute;
+            width: 40%;
+            height: 300px;
+            align-self: center;
+        }
+
+        &-data{
+            letter-spacing: 0.03em;
+            font-size: 18px;
+            width: 85%;
         }
 
         &-another{
-            left:370px;
-            top:-30px;
+            align-items: flex-end;
         }
 
         &-title{
-            mix-blend-mode: luminosity;
-            font-size: 5rem;
+            font-size: 26px;
+            font-weight: 500;
         }
 
         &-button{
             text-decoration: none;
-            background-color: black;
+            background-color: #FFFFFF;
             padding-top: 0.8rem;
             padding-bottom: 0.8rem;
             padding-left: 2rem;
             padding-right:2rem;
-            width: 8.5rem;
-            color: white;
-            margin-left: 4rem;
-            font-size: 1.5rem;
+            width: 115px;
+            color: $dark;
+            font-size: 18px;
+            border: 1px solid $dark;
+            text-align: center;
+            transition: 0.3s;
+
+            &:hover{
+                transition: 0.3s;
+                background-color:$dark;
+                color: #FFFFFF;
+            }
 
         }
 
@@ -76,7 +95,16 @@
     }
 }
 
-@media screen and (max-width: 1200px){
+@media screen and (max-width: 750px){
+
+    .hidemob{
+        display: none;
+    }
+    
+    .hidedesk{
+        display: block;
+    }
+
     .addit{
 
         &__title{
@@ -97,6 +125,14 @@
         }
 
         &__cards{
+
+            &:first-child{
+                display: none;
+            }
+        
+            &:last-child{
+                display: flex;
+            }
 
             &-card{
                 flex-direction: column;
@@ -136,10 +172,31 @@
 @media screen and (max-width: 400px){
     .addit{
 
-        &__title{
+        &__cards{
+            margin-top: 30px;
 
+            &-title{
+                font-size: 18px;
+                font-weight: 500;
+            }
+
+            &-card{
+                display: block;
+                flex-direction: column;
+                &:first-child{
+                    display: flex;
+                    
+                }
+            }
+        }
+
+        &__title{
+            
             &-content{
-                font-size: 2.5rem;
+                font-size: 20px;
+                width: 200px;
+                text-align: center;
+                
             }
         }
     }
