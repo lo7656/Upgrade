@@ -372,50 +372,50 @@ body {
     display: block;
   }
 
-  .addit__title {
-    width: auto;
-    margin-bottom: 0;
-  }
-  .addit__title-content {
-    font-size: 3rem;
-    display: block;
-    margin: 0 auto;
-  }
-  .addit__title-content:last-child {
-    align-self: center;
-  }
-  .addit__cards:first-child {
-    display: none;
-  }
-  .addit__cards:last-child {
-    display: flex;
-  }
-  .addit__cards-card {
-    flex-direction: column;
-    margin: 0;
-  }
-  .addit__cards-image {
-    margin: 0 auto;
-    margin-top: 5%;
-    width: 100%;
-    max-width: 650px;
-    height: auto;
-  }
-  .addit__cards-info {
-    position: static;
-    height: auto;
+  .addit__cards {
     width: 100%;
   }
   .addit__cards-title {
-    font-size: 3rem;
-    margin: 0 auto;
-    margin-top: 20px;
-    margin-bottom: 30px;
+    font-size: 18px;
+  }
+  .addit__cards-image-placeholder {
+    display: flex;
+    justify-content: center;
+  }
+  .addit__cards-image {
+    width: 100%;
+    max-width: 550px;
+  }
+  .addit__cards-card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+  }
+  .addit__cards-card:nth-child(even) {
+    flex-direction: column;
+  }
+  .addit__cards-info {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    height: 75px;
   }
   .addit__cards-button {
-    margin: 0 auto;
-    width: 45%;
+    width: 66.28%;
+  }
+  .addit__cards-buttonAnother {
+    margin-left: 0;
+  }
+  .addit__title {
+    display: flex;
+    align-items: center;
+  }
+  .addit__title-content {
+    font-size: 20px;
     text-align: center;
+    width: 200px;
   }
 }
 @media screen and (max-width: 400px) {
@@ -426,19 +426,33 @@ body {
     font-size: 18px;
     font-weight: 500;
   }
-  .addit__cards-card {
-    display: block;
-    flex-direction: column;
-  }
-  .addit__cards-card:first-child {
-    display: flex;
-  }
   .addit__title-content {
     font-size: 20px;
     width: 200px;
     text-align: center;
   }
 }
+.slick-dots {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  padding: 0;
+}
+.slick-dots * {
+  margin-right: 10px;
+}
+.slick-dots button {
+  font-size: 0;
+  width: 15px;
+  height: 15px;
+  background-color: #777777;
+  border: none;
+}
+.slick-dots li.slick-active button {
+  background-color: #1D1D1D;
+  border: none;
+}
+
 .perfomance-head {
   font-size: 6.25rem;
 }

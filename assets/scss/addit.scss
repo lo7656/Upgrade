@@ -107,66 +107,127 @@
 
     .addit{
 
-        &__title{
-            width: auto;
-            margin-bottom: 0;
-
-            &-content{
-                font-size: 3rem;
-                display: block;
-                margin: 0 auto;
-
-                &:last-child{
-                    align-self: center;
-                }
-            }
-
-            
-        }
-
         &__cards{
 
-            &:first-child{
-                display: none;
-            }
-        
-            &:last-child{
-                display: flex;
+            width: 100%;
+
+            &-title{
+                font-size: 18px;
             }
 
-            &-card{
-                flex-direction: column;
-                margin: 0;
+            &-image-placeholder{
+                display: flex;
+                justify-content: center;
             }
 
             &-image{
-                margin: 0 auto;
-                margin-top:5%;
                 width: 100%;
-                max-width: 650px;
-                height: auto;
+                max-width: 550px;
+
+            }
+
+            &-card{
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                justify-content: center;
+
+                &:nth-child(even){
+                    flex-direction: column;
+                }
             }
 
             &-info{
-                position: static;
-                height: auto;
                 width: 100%;
-            }
-
-            &-title{
-                font-size: 3rem;;
-                margin: 0 auto;
-                margin-top: 20px;
-                margin-bottom: 30px;
+                display: flex;
+                align-items: center;
+                justify-content: start;
+                height: 75px;
             }
 
             &-button{
-                margin: 0 auto;
-                width: 45%;
+                width: 66.28%;
+            }
+
+            &-buttonAnother{
+                margin-left: 0;
+            }
+        }
+        &__title{
+
+            display: flex;
+            align-items: center;
+
+            &-content{
+                font-size: 20px;
                 text-align: center;
+                width: 200px;
+
             }
         }
     }
+    // .addit{
+
+    //     &__title{
+    //         width: auto;
+    //         margin-bottom: 0;
+
+    //         &-content{
+    //             font-size: 3rem;
+    //             display: block;
+    //             margin: 0 auto;
+
+    //             &:last-child{
+    //                 align-self: center;
+    //             }
+    //         }
+
+            
+    //     }
+
+    //     &__cards{
+
+    //         &:first-child{
+    //             display: none;
+    //         }
+        
+    //         &:last-child{
+    //             display: flex;
+    //         }
+
+    //         &-card{
+    //             flex-direction: column;
+    //             margin: 0;
+    //         }
+
+    //         &-image{
+    //             margin: 0 auto;
+    //             margin-top:5%;
+    //             width: 100%;
+    //             max-width: 650px;
+    //             height: auto;
+    //         }
+
+    //         &-info{
+    //             position: static;
+    //             height: auto;
+    //             width: 100%;
+    //         }
+
+    //         &-title{
+    //             font-size: 3rem;;
+    //             margin: 0 auto;
+    //             margin-top: 20px;
+    //             margin-bottom: 30px;
+    //         }
+
+    //         &-button{
+    //             margin: 0 auto;
+    //             width: 45%;
+    //             text-align: center;
+    //         }
+    //     }
+    // }
 }
 
 @media screen and (max-width: 400px){
@@ -179,15 +240,6 @@
                 font-size: 18px;
                 font-weight: 500;
             }
-
-            &-card{
-                display: block;
-                flex-direction: column;
-                &:first-child{
-                    display: flex;
-                    
-                }
-            }
         }
 
         &__title{
@@ -199,5 +251,28 @@
                 
             }
         }
+    }
+}
+
+.slick-dots{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+    & *{
+        margin-right: 10px;
+    }
+
+    & button{
+        font-size: 0;
+        width: 15px;
+        height: 15px;
+        background-color: #777777;
+        border: none;
+    }
+
+    & li.slick-active button{
+        background-color: $dark;
+        border:none;
     }
 }
