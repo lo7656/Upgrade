@@ -220,16 +220,11 @@ body {
 }
 .answers__title {
   display: flex;
-  font-size: 1.2rem;
   justify-content: flex-start;
 }
 .answers__title-name {
+  font-size: 32px;
   margin: 0;
-}
-.answers__title-name:last-child {
-  -webkit-text-stroke: 1px #F2F2F2;
-  color: transparent;
-  align-self: flex-end;
 }
 .answers-info {
   color: #C8C7C7;
@@ -441,6 +436,9 @@ body {
 .slick-dots * {
   margin-right: 10px;
 }
+.slick-dots *:last-child {
+  margin-right: 0;
+}
 .slick-dots button {
   font-size: 0;
   width: 15px;
@@ -448,13 +446,17 @@ body {
   background-color: #777777;
   border: none;
 }
+.slick-dots button:focus {
+  outline: none;
+}
 .slick-dots li.slick-active button {
   background-color: #1D1D1D;
   border: none;
 }
 
 .perfomance-head {
-  font-size: 6.25rem;
+  font-size: 24px;
+  margin-bottom: 100px;
 }
 .perfomance__content {
   display: flex;
@@ -464,12 +466,13 @@ body {
 .perfomance__content-order {
   display: flex;
   width: 100%;
-  justify-content: flex-end;
-  margin-bottom: 30px;
+  justify-content: center;
+  margin-bottom: 40px;
+  margin-top: 20px;
 }
 .perfomance__content-block {
   display: flex;
-  width: 50%;
+  width: 40%;
   justify-content: center;
 }
 .perfomance__content-click {
@@ -493,62 +496,88 @@ body {
 }
 .perfomance__content-card {
   display: flex;
-  width: 100%;
+  width: 50%;
   margin-bottom: 15px;
   flex-direction: row;
+  margin-bottom: 100px;
 }
 .perfomance__content-card:nth-child(even) {
-  justify-content: flex-end;
+  justify-content: center;
 }
 .perfomance__content-back {
+  left: 0;
   -webkit-text-stroke: 1.5px #1D1D1D;
   color: transparent;
   font-size: 6.25rem;
   margin-right: 10px;
+  position: absolute;
 }
 .perfomance__content-info {
+  position: relative;
   display: flex;
-  width: 16rem;
+  width: 50%;
   flex-direction: column;
   margin: 0;
 }
 .perfomance__content-title {
   margin: 0;
-  text-align: center;
+  font-size: 20px;
+  margin-bottom: 20px;
+  margin-left: 60px;
+  width: 230px;
 }
 .perfomance__content-text {
   margin: 0;
+  margin-left: 60px;
   text-align: justify;
+  width: 230px;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 750px) {
   .perfomance {
     margin-top: 100px;
   }
   .perfomance-head {
-    font-size: 3rem;
+    font-size: 20px;
     text-align: center;
+    margin-bottom: 40px;
   }
   .perfomance__content {
-    flex-direction: column;
-    flex-wrap: none;
+    margin: 0 auto;
+    max-width: 600px;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
   }
   .perfomance__content-title {
-    font-size: 2rem;
+    text-align: center;
+    font-size: 16px;
     margin-bottom: 15px;
+    margin-left: 0;
+  }
+  .perfomance__content-text {
+    margin-left: 0;
   }
   .perfomance__content-info {
-    width: 65%;
+    width: 100%;
     font-style: italic;
   }
   .perfomance__content-card {
+    margin-left: 15px;
+    margin-bottom: 50px;
+    width: 230px;
+    position: relative;
     justify-content: center;
   }
   .perfomance__content-card:nth-child(even) {
     justify-content: center;
   }
   .perfomance__content-back {
-    display: none;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 50px;
   }
   .perfomance__content-order {
     margin-bottom: 20px;
@@ -557,15 +586,10 @@ body {
   .perfomance__content-block {
     width: 100%;
   }
-  .perfomance__content-click {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    font-size: 1.5rem;
-    background-color: #000000;
-    color: #FFFFFF;
-    width: 45%;
-    padding-left: 2rem;
-    padding-right: 2rem;
+}
+@media screen and (max-width: 530px) {
+  .perfomance__content-card:last-child {
+    display: none;
   }
 }
 body {
@@ -691,13 +715,13 @@ body {
 .about-title {
   text-align: center;
   line-height: 70%;
-  font-size: 6.25rem;
+  font-size: 32px;
   -webkit-text-stroke: 1.5px #1D1D1D;
   color: transparent;
   margin-bottom: 30px;
 }
 .about-head {
-  font-size: 3rem;
+  font-size: 32px;
   margin-top: 0;
 }
 .about__content-card {
@@ -743,7 +767,7 @@ body {
   margin-top: 5rem;
 }
 
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 750px) {
   .about-head {
     text-align: center;
     font-size: 20px;
@@ -791,6 +815,13 @@ body {
 .container {
   max-width: 1100px;
   margin: 0 auto;
+}
+
+@media screen and (max-width: 1100px) {
+  .container {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

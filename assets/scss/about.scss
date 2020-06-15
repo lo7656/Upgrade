@@ -8,14 +8,14 @@
   &-title {
     text-align: center;
     line-height: 70%;
-    font-size: 6.25rem;
+    font-size: 32px;
     -webkit-text-stroke: 1.5px $dark;
     color: transparent;
     margin-bottom: 30px;
   }
 
   &-head{
-      font-size: 3rem;
+      font-size: 32px;
       margin-top:0;
   }
 
@@ -72,7 +72,7 @@
   }
 }
 
-@media screen and (max-width: 950px){
+@media screen and (max-width: 750px){
 
   .about{
     &-head{

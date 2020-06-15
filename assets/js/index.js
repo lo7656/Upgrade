@@ -8,6 +8,4 @@ $('.slider').slick({
   cssEase: 'linear',
   autoplay: true,
   autoplaySpeed: 2000
-
-
 })

@@ -1,7 +1,8 @@
 .perfomance{
 
     &-head{
-        font-size:6.25rem;
+        font-size:24px;
+        margin-bottom: 100px;
     }
 
     &__content{
@@ -12,14 +13,15 @@
         &-order{
             display: flex;
             width: 100%;
-            justify-content: flex-end;
-            margin-bottom: 30px;
+            justify-content: center;
+            margin-bottom: 40px;
+            margin-top: 20px;
         }
 
         
         &-block{
             display: flex;
-            width: 50%;       
+            width: 40%;       
             justify-content: center;
         }
 
@@ -47,67 +49,91 @@
 
         &-card{
             display: flex;
-            width: 100%;
+            width: 50%;
             margin-bottom:15px;
             flex-direction: row;
+            margin-bottom: 100px;
 
             &:nth-child(even){
-                justify-content: flex-end;
+                justify-content: center;
             }
         }
 
         &-back{
+            left:0;
             -webkit-text-stroke: 1.5px #1D1D1D;
             color: transparent;
             font-size: 6.25rem;
             margin-right: 10px;;
+            position: absolute;
         }
 
         &-info{
+            position: relative;
             display: flex;
-            width: 16rem;
+            width: 50%;
             flex-direction: column;
             margin:0;
         }
 
         &-title{
             margin:0;
-            text-align: center;
+            font-size: 20px;
+            margin-bottom: 20px;
+            margin-left: 60px;
+            width: 230px;
         }
 
         &-text{
             margin:0;
+            margin-left: 60px;
             text-align: justify;
+            width: 230px;
         }
     }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 750px) {
 
     .perfomance{
 
         margin-top: 100px;
         &-head{
-            font-size: 3rem;
+            font-size: 20px;
             text-align: center;
+            margin-bottom: 40px;
         }
 
         &__content{
+            margin: 0 auto;
+            max-width: 600px;
+            align-items: center;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
 
-            flex-direction: column;
-            flex-wrap: none;
 
             &-title{
-                font-size: 2rem;
+                text-align: center;
+                font-size: 16px;
                 margin-bottom: 15px;
+                margin-left: 0;
+            }
+    
+            &-text{
+                margin-left: 0;
             }
 
             &-info{
-                width: 65%;
+                width: 100%;
                 font-style: italic;
             }
 
             &-card{
+                margin-left: 15px;
+                margin-bottom: 50px;
+                width: 230px;
+                position: relative;
                 justify-content: center;
 
                 &:nth-child(even){
@@ -116,7 +142,10 @@
             }
 
             &-back{
-                display: none;
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                height: 50px;
             }
 
             &-order{
@@ -127,17 +156,12 @@
             &-block{
                 width: 100%;
             }
-
-            &-click{
-                margin-top: 20px;
-                margin-bottom: 20px;
-                font-size: 1.5rem;
-                background-color: #000000;
-                color:#FFFFFF;
-                width: 45%;
-                padding-left: 2rem;
-                padding-right: 2rem;
-            }
         }
+    }
+}
+
+@media screen and (max-width: 530px) {
+    .perfomance__content-card:last-child{
+        display: none;
     }
 }

@@ -13,16 +13,11 @@ body{
 
     &__title{
         display: flex;
-        font-size: 1.2rem;
         justify-content: flex-start;
         
         &-name{
+            font-size: 32px;
             margin: 0;
-            &:last-child{
-                -webkit-text-stroke: 1px #F2F2F2;
-                color: transparent;
-                align-self: flex-end;
-            }
         }
     }
 
@@ -56,6 +51,7 @@ body{
             margin-bottom: 10px;
             width: 280px;
             padding-top: 20px;
+            
         }
 
         &-info{

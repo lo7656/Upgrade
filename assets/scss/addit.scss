@@ -261,6 +261,10 @@
     padding: 0;
     & *{
         margin-right: 10px;
+
+        &:last-child{
+            margin-right: 0;
+        }
     }
 
     & button{
@@ -269,6 +273,10 @@
         height: 15px;
         background-color: #777777;
         border: none;
+
+        &:focus{
+            outline: none;
+        }
     }
 
     & li.slick-active button{
