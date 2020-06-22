@@ -53,7 +53,7 @@ body {
 
   &__icons {
     position: absolute;
-    bottom: 22%;
+    bottom: 20%;
     left: 15%;
     display: flex;
     justify-content: space-around;
@@ -86,6 +86,7 @@ body {
       max-width: none;
       left: 0;
       width: 100%;
+      margin-top: 100px;
     }
 
     &-title{
@@ -114,9 +115,14 @@ body {
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 750px) {
   .banner{
-    
+    height: 100vh;
+
+    &__slider {
+      height: 100%;
+    }
+
     &-title{
       font-size: 4rem;
     }
@@ -128,6 +134,7 @@ body {
     &__icons{
       bottom: 7%;
       left: 0;
+      display: none;
     }
   }
 }

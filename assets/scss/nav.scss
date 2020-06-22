@@ -6,11 +6,12 @@
     padding-bottom:2rem;
     top:0;
     width: 100%;
-    background-color: $dark;
+    background-color: transparent;
     z-index: 999999;
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: 0.4s;
 
 
     &__content{
@@ -53,18 +54,18 @@
     justify-content: center;
     font-weight: bold;
     transition: 0.3s;
-    color:#FFFFFF;
+    color: $dark;
     text-decoration: none;
-    border:1px solid #FFFFFF;
+    border:1px solid $dark;
     padding:1.8rem;
     padding-top: 0.815rem;
     padding-bottom: 0.815rem;
-    background-color: $dark;
+    background-color: transparent;
     cursor: pointer;
 
     &:hover{
-        color: $dark;
-        background-color: #FFFFFF;
+        color: #FFFFFF;
+        background-color: $dark;
     }
 }
 
@@ -83,9 +84,21 @@
             }
         }
     }
+    
 
     .navbar__icons-icon{
         height: 32px;
     cursor: pointer;
+    }
+}
+
+@media screen and (max-width: 750px){
+    .navbar{
+        &__content{
+
+            &-icons{
+                width: 40%;
+            }
+        }
     }
 }
