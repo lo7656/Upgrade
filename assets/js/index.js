@@ -46,7 +46,7 @@ function trans() {
     nav.style.backgroundColor = 'transparent'
     icons[1].src = 'assets/images/menu-dark.png'
     icons[0].src = 'assets/images/mail-dark.png'
-    logo.src = 'assets/images/logo-dark.png'
+    logo.src = 'assets/images/logo-dark.png'    
     body.style.marginTop = '0'
     btns[0].style.backgroundColor = 'transparent';
     btns[1].style.backgroundColor = 'transparent';
@@ -54,6 +54,8 @@ function trans() {
     btns[1].style.border = '1px solid #1D1D1D';
     btns[0].style.color = '#1D1D1D';
     btns[1].style.color = '#1D1D1D';
+    nav.style.paddingTop = '2rem';
+    nav.style.paddingBottom = '2rem';
 }
 
 function white() {
@@ -70,6 +72,8 @@ function white() {
     btns[1].style.border = '1px solid #FFFFFF';
     btns[0].style.color = '#FFFFFF';
     btns[1].style.color = '#FFFFFF';
+    nav.style.paddingTop = '1rem';
+    nav.style.paddingBottom = '1rem';
 }
 
 function dark() {

@@ -66,6 +66,15 @@
             align-items: center;
             width: 100%;
             height: 2.7rem;
+            border: 1px solid $dark;
+            transition: 0.3s;
+
+            &:hover{
+                color: $dark;
+                background-color:  #FFFFFF;
+                border: 1px solid $dark;
+                transition: 0.3s;
+            }
         }
     }
 }

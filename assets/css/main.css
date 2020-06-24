@@ -6,6 +6,10 @@ body {
   color: #AAAAAA;
   background-color: #1D1D1D;
 }
+.contacts__icon-img {
+  height: 30px;
+  width: 30px;
+}
 .contacts__list {
   display: flex;
   max-width: 1000px;
@@ -21,6 +25,7 @@ body {
 }
 .contacts__list-block-card-name {
   font-size: 20px;
+  font-weight: 300;
 }
 .contacts__list-block-card-contact {
   font-size: 40px;
@@ -45,7 +50,7 @@ body {
     font-size: 16px;
   }
   .contacts__list-block-card-contact {
-    color: #FFFFFF;
+    color: #AAAAAA;
     font-size: 25px;
     margin: 0;
   }
@@ -116,6 +121,14 @@ body {
   align-items: center;
   width: 100%;
   height: 2.7rem;
+  border: 1px solid #1D1D1D;
+  transition: 0.3s;
+}
+.request__form-send:hover {
+  color: #1D1D1D;
+  background-color: #FFFFFF;
+  border: 1px solid #1D1D1D;
+  transition: 0.3s;
 }
 
 @media screen and (max-width: 1200px) {
@@ -157,8 +170,8 @@ body {
 .answers {
   background-color: #1D1D1D;
   color: #FFFFFF;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
 .answers__list {
   width: 50%;
@@ -166,6 +179,7 @@ body {
   flex-direction: row;
   flex-wrap: wrap;
   align-items: flex-start;
+  margin-top: 10px;
 }
 .answers__list:last-child {
   justify-content: flex-end;
@@ -198,12 +212,13 @@ body {
   margin-bottom: 2rem;
   margin-left: 5%;
   font-size: 16px;
+  font-weight: 300;
 }
 .answers__card {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  width: 95%;
+  width: 97%;
   margin-bottom: 20px;
 }
 .answers__card-title {
@@ -217,6 +232,7 @@ body {
   font-size: 18px;
   cursor: pointer;
   transition: 0.3s;
+  margin-top: 10px;
 }
 .answers__card-body {
   transition: 0.3s all ease-in-out;
@@ -320,7 +336,7 @@ body {
 }
 .addit__cards-title {
   font-size: 26px;
-  font-weight: 500;
+  font-weight: 700;
 }
 .addit__cards-button {
   text-decoration: none;
@@ -518,6 +534,7 @@ body {
   margin-left: 60px;
   text-align: justify;
   width: 230px;
+  font-style: italic;
 }
 
 @media screen and (max-width: 750px) {
@@ -593,8 +610,8 @@ body {
   padding-bottom: 5%;
 }
 .banner__icon-img {
-  height: 34px;
-  width: 34px;
+  height: 30px;
+  width: 30px;
 }
 .banner__content {
   position: absolute;
@@ -628,7 +645,7 @@ body {
   left: 15%;
   display: flex;
   justify-content: space-around;
-  width: 200px;
+  width: 180px;
 }
 .banner-icon {
   text-decoration: none;
@@ -713,7 +730,7 @@ body {
   margin: 0 auto;
 }
 .navbar__content-logo {
-  margin-left: 20px;
+  margin-left: 10px;
   margin-top: 1rem;
   text-decoration: none;
   color: #1D1D1D;

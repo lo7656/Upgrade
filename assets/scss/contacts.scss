@@ -5,6 +5,13 @@ body{
     color: #AAAAAA;
     background-color: $dark;
 
+    &__icon{
+        &-img{
+          height: 30px;
+          width: 30px;
+        }
+    }
+
     &__list{
         display: flex;
         max-width: 1000px;
@@ -21,7 +28,7 @@ body{
                 margin-bottom: 30px;
                 &-name{
                     font-size: 20px;
-                    
+                    font-weight: 300;
                 }
 
                 &-contact{
@@ -60,7 +67,7 @@ body{
                     }
     
                     &-contact{
-                        color: #FFFFFF;
+                        color: #AAAAAA;
                         font-size: 25px;
                         margin: 0;
                     }
